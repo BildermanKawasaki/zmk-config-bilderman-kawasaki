@@ -74,26 +74,26 @@ MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS)  // left-hand HRMs
 MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
 
 // special HRMs for the right meh key, as it involves a modmorph
-MAKE_HRM(hmr_meh, &kp, &comma_morph, KEYS_L THUMBS)
+MAKE_HRM(hmr_meh, &kp, &dot_morph, KEYS_L THUMBS)
 // MAKE_HRM(hmr_lpar, &kp, &lpar, KEYS_L THUMBS)    // "    "   "   "
 // MAKE_HRM(hmr_rpar, &kp, &rpar, KEYS_L THUMBS)    // "    "   "   "
 
 // mod_morph keys
-// tap: qmark | shift + tap: excl
-ZMK_BEHAVIOR(qexcl, mod_morph,
-    bindings = <&kp QMARK>, <&kp EXCL>;
+// tap: forward slash | shift + tap: less than
+ZMK_BEHAVIOR(slash_morph, mod_morph,
+    bindings = <&kp FSLH>, <&kp LT>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
-// tap: comma | shift + tap: semicolon 
-ZMK_BEHAVIOR(comma_morph, mod_morph,
-    bindings = <&kp COMMA>, <&kp SEMICOLON>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
-// tap: dot | shift + tap: colon 
+// tap: dot | shift + tap: greater than
 ZMK_BEHAVIOR(dot_morph, mod_morph,
-    bindings = <&kp DOT>, <&kp COLON>;
+    bindings = <&kp DOT>, <&kp GT>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: minus | shift + tap: double quote 
+ZMK_BEHAVIOR(minus_morph, mod_morph,
+    bindings = <&kp MINUS>, <&kp DQT>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
@@ -103,18 +103,18 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
         compatible = "zmk,keymap";
         default_layer { // ColemakDHm
             bindings = <
-            &kp Q         &kp W         &kp F            &kp P            &kp B              &kp J         &kp L              &kp U            &kp Y         &kp APOS 
-            &hml LCTRL A  &hml LALT R   &hml LGUI S      &hml LSHFT T     &kp G              &kp M         &hmr RSHFT N       &hmr RGUI E      &hmr LALT I   &hmr RCTRL O
-&kp TAB    &kp Z         &kp X         &hml MEH C       &hml HYP D       &kp V              &kp K         &hmr HYP H         &hmr_meh MEH 0   &dot_morph    &qexcl        &kp TAB
-                                        &lt UTIL ESC     &lt NAV SPACE    &sk LSHFT          &kp RET       &lt NUM BSPC       &lt FUN DEL
+            &kp B         &kp L         &kp D            &kp W            &kp Z              &kp '         &kp F              &kp O            &kp U         &kp J 
+            &hml LGUI N   &hml LALT R   &hml LCTRL T     &hml LSHFT S     &kp G              &kp Y         &hmr RSHFT H       &hmr RCTRL A     &hmr LALT E   &hmr RGUI I
+&kp TAB     &kp Q         &kp X         &hml MEH M       &hml HYP C       &kp V              &kp K         &hmr HYP P         &hmr_meh MEH 0   &minus_morph  &slash_morph        &kp TAB
+                                        &lt UTIL ESC     &sk  LSHFT       &lt NAV SPACE      &kp RET       &lt NUM DEL       &lt FUN BSPC
             >;
         };
         nav_layer { 
             bindings = <
-            ___          ___          ___             ___             ___                ___           &kp HOME          &kp UP          &kp END       &kp PAGE_UP 
-            &kp LCTRL     &kp LALT     &kp LGUI       &kp LSHFT       ___                ___           &kp LEFT          &kp DOWN        &kp RIGHT     &kp PAGE_DOWN
-    BACK    ___           ___          &kp MEH         &kp HYP         ___                ___          &kp TILDE         ___             &kp FSLH      ___             FWD
-                                       ___            ___             ___                &kp RET       &kp BSPC          &kp DEL
+            ___           ___           ___              ___              ___                ___           &kp HOME           &kp UP           &kp END       &kp PAGE_UP 
+            &kp LCTRL     &kp LALT      &kp LGUI         &kp LSHFT        ___                ___           &kp LEFT           &kp DOWN         &kp RIGHT     &kp PAGE_DOWN
+    BACK    ___           ___           &kp MEH          &kp HYP          ___                ___           &kp TILDE          ___              &kp FSLH      ___                 FWD
+                                        ___              ___              ___                &kp RET       &kp DEL            &kp BSPC
             >;
         }; 
         num_layer {

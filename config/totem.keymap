@@ -101,12 +101,12 @@ ZMK_BEHAVIOR(minus_morph, mod_morph,
 // TODO: Add hyper key as HRM
     keymap {
         compatible = "zmk,keymap";
-        default_layer { // ColemakDHm
+        default_layer { 
             bindings = <
-            &kp B         &kp L         &kp D            &kp W            &kp Z              &kp '         &kp F              &kp O            &kp U         &kp J 
+            &kp B         &kp L         &kp D            &kp W            &kp Z              &kp SQT       &kp F              &kp O            &kp U         &kp J 
             &hml LGUI N   &hml LALT R   &hml LCTRL T     &hml LSHFT S     &kp G              &kp Y         &hmr RSHFT H       &hmr RCTRL A     &hmr LALT E   &hmr RGUI I
 &kp TAB     &kp Q         &kp X         &hml MEH M       &hml HYP C       &kp V              &kp K         &hmr HYP P         &hmr_meh MEH 0   &minus_morph  &slash_morph        &kp TAB
-                                        &lt UTIL ESC     &sk  LSHFT       &lt NAV SPACE      &kp RET       &lt NUM DEL       &lt FUN BSPC
+                                        &lt UTIL ESC     &sk  LSHFT       &lt NAV SPACE      &kp RET       &lt NUM DEL        &lt FUN BSPC
             >;
         };
         nav_layer { 
@@ -119,10 +119,10 @@ ZMK_BEHAVIOR(minus_morph, mod_morph,
         }; 
         num_layer {
             bindings = <
-            &kp PLUS     &kp N7       &kp N8          &kp  N9         &kp STAR           ___           ___               ___             ___           ___ 
-            &kp N0       &kp N4       &kp N5          &kp  N6         &kp EQUAL          ___           &kp LSHFT         &kp LGUI        &kp LALT      &kp LCTRL
-  &kp LPAR  &kp MINUS    &kp N1       &kp N2          &kp  N3         &kp FSLH           ___           &kp HYP           &kp MEH         ___           ___            &kp RPAR
-                                      ___             &kp  DOT        &kp SEMI           ___           ___               ___
+            &kp PLUS     &kp N7        &kp N8            &kp  N9          &kp STAR           ___           ___                ___              ___           ___ 
+            &kp N0       &kp N4        &kp N5            &kp  N6          &kp EQUAL          ___           &kp LSHFT          &kp LGUI         &kp LALT      &kp LCTRL
+  &kp LPAR  &kp MINUS    &kp N1        &kp N2            &kp  N3          &kp FSLH           ___           &kp HYP            &kp MEH          ___           ___              &kp RPAR
+                                       ___               &kp  DOT         &kp SEMI           ___           ___                ___
             >;
         };
         fun_layer {

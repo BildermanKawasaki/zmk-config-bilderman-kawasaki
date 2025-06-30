@@ -97,15 +97,27 @@ ZMK_BEHAVIOR(minus_morph, mod_morph,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
+// tap: comma | shift + tap: qmark 
+ZMK_BEHAVIOR(comma_morph, mod_morph,
+    bindings = <&kp COMMA>, <&kp QMARK>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
+// tap: single quote | shift + tap: underscore 
+ZMK_BEHAVIOR(sqt_morph, mod_morph,
+    bindings = <&kp SQT>, <&kp UNDER>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
 / {
 // TODO: Add hyper key as HRM
     keymap {
         compatible = "zmk,keymap";
         default_layer { 
             bindings = <
-            &kp B         &kp L         &kp D            &kp W            &kp Z              &kp SQT       &kp F              &kp O            &kp U         &kp J 
+            &kp B         &kp L         &kp D            &kp W            &kp Z              &sqt_morph    &kp F              &kp O            &kp U         &kp J 
             &hml LGUI N   &hml LALT R   &hml LCTRL T     &hml LSHFT S     &kp G              &kp Y         &hmr RSHFT H       &hmr RCTRL A     &hmr LALT E   &hmr RGUI I
-&kp TAB     &kp Q         &kp X         &hml MEH M       &hml HYP C       &kp V              &kp K         &hmr HYP P         &hmr_meh MEH 0   &minus_morph  &slash_morph        &kp TAB
+&kp TAB     &kp Q         &kp X         &hml MEH M       &hml HYP C       &kp V              &kp K         &hmr HYP P         &hmr_meh MEH 0   &minus_morph  &slash_morph        &comma_morph
                                         &lt UTIL ESC     &sk  LSHFT       &lt NAV SPACE      &kp RET       &lt NUM DEL        &lt FUN BSPC
             >;
         };

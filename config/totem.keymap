@@ -118,7 +118,7 @@ ZMK_BEHAVIOR(sqt_morph, mod_morph,
             &kp B         &kp L         &kp D            &kp W            &kp Z              &sqt_morph    &kp F              &kp O            &kp U         &kp J 
             &hml LGUI N   &hml LALT R   &hml LCTRL T     &hml LSHFT S     &kp G              &kp Y         &hmr RSHFT H       &hmr RCTRL A     &hmr LALT E   &hmr RGUI I
 &kp TAB     &kp Q         &kp X         &hml MEH M       &hml HYP C       &kp V              &kp K         &hmr HYP P         &hmr_meh MEH 0   &minus_morph  &slash_morph        &comma_morph
-                                        &lt UTIL ESC     &sk  LSHFT       &lt NAV SPACE      &kp RET       &lt NUM DEL        &lt FUN BSPC
+                                        &lt UTIL ESC     &sk  LSHFT       &lt NAV SPACE      &kp RET       &lt NUM BSPC       &lt FUN DEL
             >;
         };
         nav_layer { 
@@ -139,18 +139,18 @@ ZMK_BEHAVIOR(sqt_morph, mod_morph,
         };
         fun_layer {
             bindings = <
-            &kp F12      &kp F7       &kp F8          &kp F9          ___                ___           ___               ___             ___           ___
-            &kp F11      &kp F4       &kp F5          &kp F6          ___                ___           &kp LSHFT         &kp LGUI        &kp LALT      &kp LCTRL 
-    ___     &kp F10      &kp F1       &kp F2          &kp F3          ___                ___           &kp HYP           &kp MEH         ___           ___             ___
-                                      ___             ___             ___                ___           ___               ___
+            &kp F12      &kp F7        &kp F8           &kp F9            ___                ___           ___                ___              ___           ___
+            &kp F11      &kp F4        &kp F5           &kp F6            ___                ___           &kp LSHFT          &kp LGUI         &kp LALT      &kp LCTRL 
+    ___     &kp F10      &kp F1        &kp F2           &kp F3            ___                ___           &kp HYP            &kp MEH          ___           ___             ___
+                                       ___              ___               ___                ___           ___                ___
             >;
         };
         util_layer {
             bindings = <
-            &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_CLR      ___                ___           ___               &kp C_VOL_UP    ___           ___
-            &kp LCTRL     &kp LALT     &kp LGUI       &kp LSHFT      ___                ___           ___                &kp C_VOL_DN    ___           ___ 
-    ___     ___          ___          ___             &kp HYP        ___                ___           ___               ___             ___           ___             ___
-                                      ___             ___             ___                ___           ___               &kp C_MUTE
+            &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_CLR        ___                ___           &kp C_VOL_DN      &kp C_MUTE        &kp C_VOL_UP  ___
+            &kp LCTRL    &kp LALT      &kp LGUI         &kp LSHFT         ___                ___           &kp C_PREV        &kp C_PP          &kp C_NEXT    ___ 
+    ___     ___          ___           ___              &kp HYP           ___                ___           ___               ___               ___           ___             ___
+                                       ___              ___               ___                ___           ___               ___
             >;
         };  
     };

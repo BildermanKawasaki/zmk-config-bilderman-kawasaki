@@ -125,7 +125,7 @@ ZMK_BEHAVIOR(sqt_morph, mod_morph,
             bindings = <
             ___             ___           ___              ___              ___                ___           &kp HOME           &kp UP           &kp END       &kp PAGE_UP 
             &kp LCTRL       &kp LALT      &kp LGUI         &kp LSHFT        ___                ___           &kp LEFT           &kp DOWN         &kp RIGHT     &kp PAGE_DOWN
-LA(LEFT)    ___             ___           &kp MEH          &kp HYP          ___                ___           &kp TILDE          ___              &kp FSLH      ___               LA(RIGHT)
+    BACK    ___             ___           &kp MEH          &kp HYP          ___                ___           &kp TILDE          ___              &kp FSLH      ___                 FWD
                                           ___              ___              ___                &kp RET       &kp DEL            &kp BSPC
             >;
         }; 

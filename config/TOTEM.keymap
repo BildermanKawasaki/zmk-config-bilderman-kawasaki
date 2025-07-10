@@ -118,7 +118,7 @@ ZMK_BEHAVIOR(sqt_morph, mod_morph,
             &kp B         &kp L         &kp D            &kp W            &kp Z              &sqt_morph    &kp F              &kp O            &kp U         &kp J 
             &hml LGUI N   &hml LALT R   &hml LCTRL T     &hml LSHFT S     &kp G              &kp Y         &hmr RSHFT H       &hmr RCTRL A     &hmr LALT E   &hmr RGUI I
 &kp TAB     &kp Q         &kp X         &hml MEH M       &hml HYP C       &kp V              &kp K         &hmr HYP P         &hmr_meh MEH 0   &minus_morph  &slash_morph        &comma_morph
-                                        &lt UTIL ESC     &sk  LSHFT       &lt NAV SPACE      &kp RET       &lt NUM BSPC       &lt FUN DEL
+                                        &lt UTIL ESC     &caps_word       &lt NAV SPACE      &kp RET       &lt NUM BSPC       &lt FUN DEL
             >;
         };
         nav_layer { 

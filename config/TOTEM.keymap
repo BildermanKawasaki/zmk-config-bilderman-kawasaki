@@ -123,10 +123,10 @@ ZMK_BEHAVIOR(sqt_morph, mod_morph,
         };
         nav_layer { 
             bindings = <
-            ___             ___           ___              ___              ___                ___           &kp HOME           &kp UP           &kp END       &kp PAGE_UP 
-            &kp LCTRL       &kp LALT      &kp LGUI         &kp LSHFT        ___                ___           &kp LEFT           &kp DOWN         &kp RIGHT     &kp PAGE_DOWN
-    BACK    ___             ___           &kp MEH          &kp HYP          ___                ___           &kp TILDE          ___              &kp FSLH      ___                 FWD
-                                          ___              ___              ___                &kp RET       &kp DEL            &kp BSPC
+             ___             ___           ___              ___              ___                ___           &kp HOME           &kp UP           &kp END       &kp PAGE_UP 
+             &kp LCTRL       &kp LALT      &kp LGUI         &kp LSHFT        ___                ___           &kp LEFT           &kp DOWN         &kp RIGHT     &kp PAGE_DOWN
+&kp LA(LEFT) ___             ___           &kp MEH          &kp HYP          ___                ___           &kp TILDE          ___              &kp FSLH      ___              &kp LA(RIGHT) 
+                                           ___              ___              ___                &kp RET       &kp DEL            &kp BSPC
             >;
         }; 
         num_layer {

@@ -1,5 +1,5 @@
 file_format: "1"
-id: TOTEM
+id: totem
 name: TOTEM
 type: shield
 url: https://github.com/GEIGEIGEIST/TOTEM
@@ -8,5 +8,5 @@ features:
   - keys
   - studio
 siblings:
-  - TOTEM_left
-  - TOTEM_right
+  - totem_left
+  - totem_right

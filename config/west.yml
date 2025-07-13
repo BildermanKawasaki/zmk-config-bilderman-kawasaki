@@ -9,7 +9,7 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-keyboard-TOTEM
+    - name: zmk-keyboard-totem
       remote: BildermanKawasaki 
       revision: main
   self:

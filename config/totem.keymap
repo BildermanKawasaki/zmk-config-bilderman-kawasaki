@@ -6,6 +6,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define XXX &none
 #define TODO ___
@@ -149,7 +150,7 @@ ZMK_BEHAVIOR(sqt_morph, mod_morph,
             bindings = <
             &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_CLR        ___                ___           &kp C_VOL_DN      &kp C_MUTE        &kp C_VOL_UP  ___
             &kp LCTRL      &kp LALT      &kp LGUI         &kp LSHFT         ___                ___           &kp C_PREV        &kp C_PP          &kp C_NEXT    ___ 
-    ___     &studio_unlock ___           ___              &kp HYP           ___                ___           ___               ___               ___           ___             ___
+OUT_TOG     &studio_unlock ___           ___              &kp HYP           ___                ___           ___               ___               ___           ___             ___
                                          ___              ___               ___                ___           ___               ___
             >;
         };  

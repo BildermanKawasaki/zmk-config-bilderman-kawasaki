@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: BildermanKawasaki
       url-base: https://github.com/BildermanKawasaki
+    - name: zmk-helpers
+      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -11,6 +13,9 @@ manifest:
       import: app/west.yml
     - name: zmk-keyboard-totem
       remote: BildermanKawasaki 
+      revision: main
+    - name: zmk-helpers
+      remote: urob
       revision: main
   self:
     path: config

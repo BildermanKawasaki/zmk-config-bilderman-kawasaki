@@ -16,6 +16,9 @@ manifest:
     - name: zmk-keyboard-totem
       remote: BildermanKawasaki 
       revision: main
+    - name: zmk-device-adeptble-trackball
+      remote: BildermanKawasaki 
+      revision: main
     - name: zmk-helpers
       remote: urob
       revision: main

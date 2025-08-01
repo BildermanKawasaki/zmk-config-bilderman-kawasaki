@@ -1,4 +1,5 @@
 include:
+  # TOTEM
   - board: seeeduino_xiao_ble
     shield: totem_dongle
   - board: seeeduino_xiao_ble
@@ -9,4 +10,12 @@ include:
   - board: seeeduino_xiao_ble
     shield: totem_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-# there is no settingsreset (needed) for the XIAO
+  # AdeptBLE
+  - board: seeeduino_xiao_ble
+    shield: AdeptBLE
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: seeeduino_xiao_ble
+    shield: AdeptBLE
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n

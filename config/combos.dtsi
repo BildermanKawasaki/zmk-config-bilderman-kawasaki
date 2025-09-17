@@ -67,3 +67,6 @@ ZMK_COMBO(gt,    &kp GT,        RM3 RM4,     BASE NAV NUM, COMBO_TERM_FAST)
 
 // caps word on index fingers
 ZMK_COMBO(capsw, &caps_word,    LM1 RM1,     BASE NAV NUM, COMBO_TERM_FAST)
+
+// enter/exit gaming layer
+ZMK_COMBO(glyr, &tog GAME, RB1 RB2 RB3 RB4, BASE GAME, COMBO_TERM_SLOW)

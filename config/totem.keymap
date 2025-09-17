@@ -17,6 +17,7 @@
 #define NUM 2
 #define FUN 3
 #define UTIL 4
+#define GAME 5
 
 #include "combos.dtsi"
 
@@ -158,7 +159,7 @@ ZMK_BEHAVIOR(sqt_morph, mod_morph,
              &kp Q          &kp W         &kp E            &kp R             &kp T              ___           ___               ___               ___           ___
              &kp A          &kp S         &kp D            &kp F             &kp G              ___           ___               ___               ___           ___ 
 &kp TAB      &kp Z          &kp X         &kp C            &kp V             &kp B              ___           ___               ___               ___           ___             ___
-                                          ___              ___               &kp SPACE          ___           ___               ___
+                                          &kp ESC          &kp LALT          &kp SPACE          ___           ___               ___
             >;
         };  
     };

@@ -154,6 +154,7 @@ ZMK_BEHAVIOR(sqt_morph, mod_morph,
 &out OUT_TOG &studio_unlock ___           ___              &kp HYP           ___                ___           ___               ___               ___           ___             ___
                                           ___              ___               ___                ___           ___               ___
             >;
+        };
         game_layer {
             bindings = <
              &kp Q          &kp W         &kp E            &kp R             &kp T              ___           ___               ___               ___           ___

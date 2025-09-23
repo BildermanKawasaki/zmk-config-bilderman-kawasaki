@@ -157,9 +157,9 @@ ZMK_BEHAVIOR(sqt_morph, mod_morph,
         };
         game_layer {
             bindings = <
-             &kp Q          &kp W         &kp E            &kp R             &kp T              ___           ___               ___               ___           ___
-             &kp A          &kp S         &kp D            &kp F             &kp G              ___           ___               ___               ___           ___ 
-&kp TAB      &kp Z          &kp X         &kp C            &kp V             &kp B              ___           ___               ___               ___           ___             ___
+             &kp B          &kp L         &kp D            &kp W             &kp Z              ___           ___               ___               ___           ___
+             &kp N          &kp R         &kp T            &kp S             &kp G              ___           ___               ___               ___           ___ 
+&kp TAB      &kp Q          &kp X         &kp M            &kp C             &kp V              ___           ___               ___               ___           ___             ___
                                           &kp ESC          &kp LALT          &kp SPACE          ___           ___               ___
             >;
         };  

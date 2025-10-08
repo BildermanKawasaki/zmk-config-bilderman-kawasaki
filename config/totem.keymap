@@ -23,8 +23,8 @@
 #include "combos.dtsi"
 
 // navigation bindings for back/forward and prev tab/next tab
-#define BACK &kp LG(LBKT)
-#define FWD &kp LG(RBKT)
+#define BACK &kp LA(LEFT)
+#define FWD &kp LA(RIGHT)
 
 // hyper and meh keys
 #define HYP LS(LC(LA(LGUI)))
@@ -82,6 +82,12 @@ MAKE_HRM(hmr_meh, &kp, &dot_morph, KEYS_L THUMBS)
 // MAKE_HRM(hmr_rpar, &kp, &rpar, KEYS_L THUMBS)    // "    "   "   "
 
 // mod_morph keys
+// tap: caps word | : less than
+ZMK_BEHAVIOR(slash_morph, mod_morph,
+    bindings = <&kp FSLH>, <&kp LT>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+
 // tap: forward slash | shift + tap: less than
 ZMK_BEHAVIOR(slash_morph, mod_morph,
     bindings = <&kp FSLH>, <&kp LT>;
@@ -112,6 +118,11 @@ ZMK_BEHAVIOR(sqt_morph, mod_morph,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
+// tap: 
+ZMK_BEHAVIOR(num_tap, hold_tap,
+    bindings = <&mo NUM>, <&caps_word>;
+ )
+
 / {
 // TODO: Add hyper key as HRM
     keymap {
@@ -121,14 +132,14 @@ ZMK_BEHAVIOR(sqt_morph, mod_morph,
             &kp B         &kp L         &kp D            &kp W            &kp Z              &sqt_morph    &kp F              &kp O            &kp U         &kp J 
             &hml LGUI N   &hml LALT R   &hml LCTRL T     &hml LSHFT S     &kp G              &kp Y         &hmr RSHFT H       &hmr RCTRL A     &hmr LALT E   &hmr RGUI I
 &kp TAB     &kp Q         &kp X         &hml MEH M       &hml HYP C       &kp V              &kp K         &hmr HYP P         &hmr_meh MEH 0   &minus_morph  &slash_morph        &comma_morph
-                                        &lt UTIL ESC     &caps_word       &lt NAV SPACE      &kp RET       &lt NUM BSPC       &lt FUN DEL
+                                        &lt UTIL ESC     &num_tap         &lt NAV SPACE      &kp RET       &lt NUM BSPC       &lt FUN DEL
             >;
         };
         nav_layer { 
             bindings = <
              ___             ___           ___              ___              ___                ___           &kp HOME           &kp UP           &kp END       &kp PAGE_UP 
              &kp LCTRL       &kp LALT      &kp LGUI         &kp LSHFT        ___                ___           &kp LEFT           &kp DOWN         &kp RIGHT     &kp PAGE_DOWN
-&mkp MB4     ___             ___           &kp MEH          &kp HYP          ___                ___           &kp TILDE          ___              &kp FSLH      ___              &mkp MB5
+BACK         ___             ___           &kp MEH          &kp HYP          ___                ___           &kp TILDE          ___              &kp FSLH      ___              FWD
                                            ___              ___              ___                &kp RET       &kp DEL            &kp BSPC
             >;
         }; 

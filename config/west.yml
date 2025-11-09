@@ -13,18 +13,34 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+
+      # device and drivenr modules
     - name: zmk-keyboard-totem
       remote: BildermanKawasaki 
-      revision: main
     - name: zmk-device-adeptble-trackball
       remote: BildermanKawasaki 
-      revision: main
-    - name: zmk-helpers
-      remote: urob
-      revision: main
     - name: zmk-pmw3610-driver
       remote: efogdev
-      revision: main
+
+      # urob modules
+    - name: zmk-adaptive-key
+      remote: urob
+      path: modules/zmk/adaptive-key
+    - name: zmk-auto-layer
+      remote: urob
+      path: modules/zmk/auto-layer
+    - name: zmk-helpers
+      remote: urob
+      path: modules/zmk/helpers
+    - name: zmk-leader-key
+      remote: urob
+      path: modules/zmk/leader-key
+    - name: zmk-tri-state
+      remote: urob
+      path: modules/zmk/tri-state
+    - name: zmk-unicode
+      remote: urob
+      path: modules/zmk/unicode
   self:
     path: config
   

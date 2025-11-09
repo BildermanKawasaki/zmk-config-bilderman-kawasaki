@@ -148,7 +148,7 @@ ZMK_BEHAVIOR(num_tap, hold_tap,
             bindings = <
              ___             ___           ___              ___              ___                ___           &kp HOME           &kp UP           &kp END       &kp PAGE_UP 
              &kp LCTRL       &kp LALT      &kp LGUI         &kp LSHFT        ___                ___           &kp LEFT           &kp DOWN         &kp RIGHT     &kp PAGE_DOWN
-BACK         ___             ___           &kp MEH          &kp HYP          ___                ___           &kp TILDE          ___              &kp FSLH      ___              FWD
+___         ___             ___           &kp MEH          &kp HYP          ___                ___           &kp TILDE          ___              &kp FSLH      ___              ___
                                            ___              ___              ___                &kp RET       &kp DEL            &kp BSPC
             >;
         }; 
@@ -156,8 +156,8 @@ BACK         ___             ___           &kp MEH          &kp HYP          ___
             bindings = <
             &kp PLUS       &kp N7        &kp N8            &kp  N9          &kp STAR           ___           ___                ___              ___           ___ 
             &kp N0         &kp N4        &kp N5            &kp  N6          &kp DOT          ___           &kp LSHFT          &kp LGUI         &kp LALT      &kp LCTRL
-  &kp LPAR  &kp MINUS      &kp N1        &kp N2            &kp  N3          &kp FSLH           ___           &kp HYP            &kp MEH          ___           ___              &kp RPAR
-                                         ___               &kp  DOT         &kp EQUAL          __           ___                ___
+  ___       &kp MINUS      &kp N1        &kp N2            &kp  N3          &kp FSLH           ___           &kp HYP            &kp MEH          ___           ___              ___
+                                         ___               &kp  DOT         &kp EQUAL          ___           ___                ___
             >;
         };
         fun_layer {
